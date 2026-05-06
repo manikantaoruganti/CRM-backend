@@ -1,10 +1,9 @@
--- CreateEnum
+
 CREATE TYPE "Role" AS ENUM ('ADMIN', 'EMPLOYEE');
 
--- CreateEnum
 CREATE TYPE "TaskStatus" AS ENUM ('PENDING', 'IN_PROGRESS', 'DONE');
 
--- CreateTable
+
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
@@ -16,7 +15,7 @@ CREATE TABLE "User" (
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
 
--- CreateTable
+
 CREATE TABLE "Customer" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
